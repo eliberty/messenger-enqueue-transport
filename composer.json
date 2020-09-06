@@ -1,5 +1,5 @@
 {
-    "name": "sroze/messenger-enqueue-transport",
+    "name": "eliberty/messenger-enqueue-transport",
     "type": "symfony-bundle",
     "description": "Enqueue adapter for Symfony Messenger component",
     "keywords": ["symfony", "messenger", "enqueue"],
@@ -16,10 +16,10 @@
         }
     ],
     "require": {
-        "enqueue/enqueue-bundle": "^0.10",
-        "symfony/messenger": "^4.3|^5",
+        "enqueue/enqueue-bundle": "^0.9",
+        "eliberty/symfony-messenger": "^3.4|^4.3|^5",
         "symfony/options-resolver": "^3.4|^4.2|^5",
-        "enqueue/amqp-tools": "^0.10"
+        "enqueue/amqp-tools": "^0.9"
     },
     "replace": {
         "enqueue/messenger-adapter": ">0.2.2"
@@ -33,7 +33,8 @@
     "minimum-stability": "stable",
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0-dev"
+            "dev-master": "1.0-dev",
+            "dev-3.4": "3.4.x-dev"
         }
     },
     "require-dev": {
